@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -89,6 +89,9 @@ h2{font-family:var(--display);font-size:clamp(30px,4vw,40px);line-height:1.15;le
 .hero{position:relative;z-index:2;padding:88px 0 96px;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;transform-style:preserve-3d;perspective:1000px}
 @media (max-width:940px){ .hero{grid-template-columns:1fr;gap:44px;padding:64px 0 76px} }
 .hero h1{font-family:var(--display);font-size:clamp(40px,6.4vw,66px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px;font-weight:600}
+.logo-text{display:inline-block;background:linear-gradient(90deg,#ff4d6d,#ff9f1c,#ffe66d,#4ade80,#38bdf8,#a78bfa,#f472b6);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (prefers-reduced-motion:no-preference){.logo-text{animation:rainbowShift 6s linear infinite}}
+@keyframes rainbowShift{to{background-position:200% 50%}}
 .hero p.lead{color:var(--muted);font-size:18px;max-width:52ch;margin:0 0 34px}
 .hero p.lead strong{color:var(--text);font-weight:600}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
@@ -285,7 +288,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <header>
   <div class="wrap">
     <nav class="nav">
-      <a class="logo" href="#top"><span class="logo-text">Sreejith<span class="logo-dot">SR</span></span></a>
+      <a class="logo" href="#top"><span class="logo-text">SREEJITH SR</span></a>
       <div class="nav-links">
         <a href="#what">What I do</a>
         <a href="#experience">Experience</a>
@@ -297,7 +300,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
         <span class="mode-2d">OLD</span>
         <a href="/3d" class="mode-3d">NEW ✦</a>
       </div>
-      <a class="btn btn-primary" href="mailto:writeme@sreejithsr.in,sreejithsubhashithan@gmail.com?subject=Let%27s%20work%20together">Hire me</a>
+      <a class="btn btn-primary" href="#contact">Hire me</a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
     </nav>
         <div class="mobile-menu" id="mobileMenu">
@@ -312,7 +315,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#certifications">Certifications</a>
-      <a href="mailto:writeme@sreejithsr.in,sreejithsubhashithan@gmail.com?subject=Let%27s%20work%20together">Hire me</a>
+      <a href="#contact">Hire me</a>
     </div>
   </div>
 </header>
